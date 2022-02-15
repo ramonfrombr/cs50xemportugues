@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block conteudo %}
+
+<h1 id="cs50-certificate">Certificado CS50</h1>
+
+<p>Se você enviar e receber uma pontuação de pelo menos 70% em cada uma das listas de problemas e projeto final, você estará apto a ganhar um <a href="https://cs50.harvard.edu/certificates">certificado CS50</a> igual ao disponível abaixo. Leia as <a href="perguntasfrequentes">Perguntas Frequentes</a> para informações adicionais, e caso sua pergunta não esteja respondida lá, envie um email para <a href="mailto:cs50xemportugues@gmail.com">cs50xemportugues@gmail.com</a>, e nós faremos o nosso melhor para ajudar.</p>
+
+
+<p style="max-width: 720px"><a href="https://certificates.cs50.io/89b2b9db-75fb-4baf-b0cd-8d9fc843d6e0"><img src="{{ url_for('static', filename='imagens/certificado.png') }}" alt="Certificado CS50"></a></p>
+
+{% endblock %}

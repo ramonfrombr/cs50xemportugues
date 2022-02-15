@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block conteudo %}
+
+<h1 id="week-0">Semana 0</h1>
+
+<div class="border embed-responsive embed-responsive-16by9" data-video="">
+    <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="embed-responsive-item" src="https://video.cs50.io/jjqgP9dpD1k?screen=w3XNssqYBSU"></iframe>
+</div>
+
+<ul>
+  <li data-marker="-">Aula
+    <ul>
+    	<li data-marker="*">Video</li>
+    	<li data-marker="*"><a href="">Áudio</a></li>
+		<li data-marker="*"><a href="../anotacoes/0">Anotações</a></li>
+		<li data-marker="+">Slides
+		<ul>
+		  <li data-marker="*"><a href="">Google Slides</a></li>
+		  <li data-marker="*"><a href="">PDF</a></li>
+		</ul>
+		</li>
+		<li data-marker="+">Código Fonte
+		<ul>
+		  <li data-marker="*"><a href="">Studio</a></li>
+		  <li data-marker="*"><a href="">Zip</a></li>
+		</ul>
+		</li>
+    </ul>
+  </li>
+  <li data-marker="*"><a href="../problemas/0">Lista de Problemas 0</a></li>
+</ul>
+
+{% endblock %}

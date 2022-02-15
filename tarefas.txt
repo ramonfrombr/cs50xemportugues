@@ -1,0 +1,18 @@
+Páginas para implementar
+
+[x] - Perguntas Frequentes
+[x] - Certificado
+[x] - Curriculo
+[x] - Equipe
+[x] - Especializacoes
+[ ] - Index
+[x] - Obrigado
+[x] - Projeto Final
+[x] - Seções
+[x] - Tutorias
+[ ] - Semanas
+[ ] - Problemas
+[ ] - Codigo Fonte
+[ ] - 
+[ ] - 
+[ ] - 
