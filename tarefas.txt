@@ -1,11 +1,11 @@
 Páginas para implementar
 
+[ ] - Index
 [x] - Perguntas Frequentes
 [x] - Certificado
 [x] - Curriculo
 [x] - Equipe
 [x] - Especializacoes
-[ ] - Index
 [x] - Obrigado
 [x] - Projeto Final
 [x] - Seções
@@ -16,3 +16,210 @@ Páginas para implementar
 [ ] - 
 [ ] - 
 [ ] - 
+
+Semanas
+
+[ ] - Semana 0
+[ ] - Semana 1
+[ ] - Semana 2
+[ ] - Semana 3
+[ ] - Semana 4
+[ ] - Semana 5
+[ ] - Semana 6
+[ ] - Semana 7
+[ ] - Semana 8
+[ ] - Semana 9
+
+Código Fonte
+
+[ ] - Semana 0
+[ ] - Semana 1
+[ ] - Semana 2
+[ ] - Semana 3
+[ ] - Semana 4
+[ ] - Semana 5
+[ ] - Semana 6
+[ ] - Semana 7
+[ ] - Semana 8
+[ ] - Semana 9
+
+Anotações
+
+[ ] - Semana 0
+[ ] - Semana 1
+[ ] - Semana 2
+[ ] - Semana 3
+[ ] - Semana 4
+[ ] - Semana 5
+[ ] - Semana 6
+[ ] - Semana 7
+[ ] - Semana 8
+[ ] - Semana 9
+
+Slides
+
+[ ] - Semana 0
+[ ] - Semana 1
+[ ] - Semana 2
+[ ] - Semana 3
+[ ] - Semana 4
+[ ] - Semana 5
+[ ] - Semana 6
+[ ] - Semana 7
+[ ] - Semana 8
+[ ] - Semana 9
+
+Especificação dos Labs
+
+[ ] - População
+[ ] - Scrabble
+[ ] - Ordenar
+[ ] - Volume
+[ ] - Herança
+[ ] - Copa do Mundo
+[ ] - Canções
+[ ] - Trivia
+[ ] - Aniversário
+
+Especificações dos Problemas
+
+[ ] - Scratch
+[ ] - Olá
+[ ] - Mario (menos)
+[ ] - Mario (mais)
+[ ] - Dinheiro
+[ ] - Crédito
+
+[ ] - Lebigilidade
+[ ] - César
+[ ] - Substituição
+
+[ ] - Pluralidade
+[ ] - Preferência
+[ ] - Pares Ranqueados
+
+[ ] - Filtro (menos)
+[ ] - Filtro (mais)
+[ ] - Recuperar
+
+[ ] - Corretor
+
+[ ] - Olá
+[ ] - Mario (menos)
+[ ] - Mario (mais)
+[ ] - Dinheiro
+[ ] - Crédito
+[ ] - Legibilidade
+[ ] - DNA
+
+[ ] - Filmes
+[ ] - Vila Cinquenta
+
+[ ] - Página Inicial
+
+[ ] - Finanças
+
+
+Checks dos Problemas
+
+[ ] - População
+[ ] - Scrabble
+[ ] - Ordenar
+[ ] - Volume
+[ ] - Herança
+[ ] - Copa do Mundo
+[ ] - Canções
+[ ] - Trivia
+[ ] - Aniversário
+
+[ ] - Scratch
+[ ] - Olá
+[ ] - Mario (menos)
+[ ] - Mario (mais)
+[ ] - Dinheiro
+[ ] - Crédito
+
+[ ] - Lebigilidade
+[ ] - César
+[ ] - Substituição
+
+[ ] - Pluralidade
+[ ] - Preferência
+[ ] - Pares Ranqueados
+
+[ ] - Filtro (menos)
+[ ] - Filtro (mais)
+[ ] - Recuperar
+
+[ ] - Corretor
+
+[ ] - Olá (python)
+[ ] - Mario (menos) (python)
+[ ] - Mario (mais) (python)
+[ ] - Dinheiro (python)
+[ ] - Crédito (python)
+[ ] - Legibilidade (python)
+[ ] - DNA (python)
+
+[ ] - Filmes
+[ ] - Vila Cinquenta
+
+[ ] - Página Inicial
+
+[ ] - Finanças
+
+
+Tópicos
+
+[ ] - Tipos de Dados
+[ ] - Operadores
+[ ] - Estruturas Condicionais
+[ ] - Estruturas de Repetição
+[ ] - Linha de Comando
+
+[ ] - Variáveis e Escopo
+[ ] - Vetores
+[ ] - Funções
+[ ] - Argumentos de Linha de Comando
+[ ] - Depuração
+
+[ ] - Ordenação por Flutuação
+[ ] - Ordenação por Seleção
+[ ] - Ordenação por Inserção
+[ ] - Recursão
+[ ] - Ordenação por Mistura
+[ ] - Pesquisa Linear
+[ ] - Pesquia Binária
+[ ] - Resumo dos Algoritmos
+
+[ ] - Alocação de Memória Dinâmica
+[ ] - Pilha de Chamadas
+[ ] - Ponteiros para Arquivos
+[ ] - Ponteiros
+[ ] - Sistema Hexadecimal
+
+[ ] - Estruturas (comando struct)
+[ ] - Tipos de Dados Personalizados
+[ ] - Listas Encadeadas
+[ ] - Listas Duplamente Encadeadas
+[ ] - Pilhas
+[ ] - Filas
+[ ] - Tabelas de Dispersão
+[ ] - Árvores de Prefixos
+[ ] - Estruturas de Dados
+
+[ ] - Python
+
+[ ] - SQL
+
+[ ] - Resumo da Internet
+[ ] - Protocolo IP
+[ ] - Protocolo TCP
+[ ] - Protocolo HTTP
+[ ] - HTML
+[ ] - CSS
+[ ] - JavaScript
+[ ] - DOM (Modelo de Objeto de Documento)
+
+[ ] - Flask
+[ ] - Ajax
