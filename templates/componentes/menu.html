@@ -19,39 +19,43 @@
         <ul class="fa-ul">
             <li data-marker="*">
                 <span class="fa-li"><i class="fas fa-circle"></i></span>
-                <a href="{{ url_for('cs50x.semanas.semana0') }}">Semana 0</a> Scratch <strong class="text-white">😺</strong>
+                <a href="{{ url_for('cs50x.semanas.semana0') }}">Semana 0 <span class="semana-titulo">Scratch <strong class="text-white">😺</strong></span></a>
             </li>
             <li data-marker="*">
                 <span class="fa-li"><i class="fas fa-circle"></i></span>
-                <a href="{{ url_for('cs50x.semanas.semana1') }}">Semana 1</a> Linguagem C
+                <a href="{{ url_for('cs50x.semanas.semana1') }}">Semana 1 <span class="semana-titulo">Linguagem C</span></a>
             </li>
             <li data-marker="*">
                 <span class="fa-li"><i class="fas fa-circle"></i></span>
-                <a href="{{ url_for('cs50x.semanas.semana2') }}">Semana 2</a> Vetores
+                <a href="{{ url_for('cs50x.semanas.semana2') }}">Semana 2 <span class="semana-titulo">Vetores</span></a>
             </li>
             <li data-marker="*">
                 <span class="fa-li"><i class="fas fa-circle"></i></span>
-                <a href="{{ url_for('cs50x.semanas.semana3') }}">Semana 3</a> Algoritmos
+                <a href="{{ url_for('cs50x.semanas.semana3') }}">Semana 3 <span class="semana-titulo">Algoritmos</span></a>
             </li>
             <li data-marker="*">
                 <span class="fa-li"><i class="fas fa-circle"></i></span>
-                <a href="{{ url_for('cs50x.semanas.semana4') }}">Semana 4</a> Memória <strong class="text-white">🧠</strong>
+                <a href="{{ url_for('cs50x.semanas.semana4') }}">Semana 4 <span class="semana-titulo">Memória <strong class="text-white">🧠</strong></span></a>
             </li>
             <li data-marker="*">
                 <span class="fa-li"><i class="fas fa-circle"></i></span>
-                <a href="{{ url_for('cs50x.semanas.semana5') }}">Semana 5</a> Estruturas de Dados
+                <a href="{{ url_for('cs50x.semanas.semana5') }}">Semana 5 <span class="semana-titulo">Estruturas de Dados</span></a>
             </li>
             <li data-marker="*">
                 <span class="fa-li"><i class="fas fa-circle"></i></span>
-                <a href="{{ url_for('cs50x.semanas.semana6') }}">Semana 6</a> Python <strong class="text-white">🐍</strong>
+                <a href="{{ url_for('cs50x.semanas.semana6') }}">Semana 6 <span class="semana-titulo">Python <strong class="text-white">🐍</strong></span></a>
             </li>
             <li data-marker="*">
                 <span class="fa-li"><i class="fas fa-circle"></i></span>
-                <a href="{{ url_for('cs50x.semanas.semana7') }}">Semana 7</a> SQL
+                <a href="{{ url_for('cs50x.semanas.semana7') }}">Semana 7 <span class="semana-titulo">SQL</span></a>
             </li>
             <li data-marker="*">
                 <span class="fa-li"><i class="fas fa-circle"></i></span>
-                <a href="{{ url_for('cs50x.semanas.semana8') }}">Semana 8</a> Informação
+                <a href="{{ url_for('cs50x.semanas.semana8') }}">Semana 8 <span class="semana-titulo">HTML, CSS, JavaScript</span></a>
+            </li>
+            <li data-marker="*">
+                <span class="fa-li"><i class="fas fa-circle"></i></span>
+                <a href="{{ url_for('cs50x.semanas.semana9') }}">Semana 9 <span class="semana-titulo">Flask</span></a>
             </li>
         </ul>
                                 
@@ -64,6 +68,7 @@
             </li>
         </ul>
 
+        <!--
         <hr>
 
         <ul class="fa-ul">
@@ -71,7 +76,7 @@
                 <span class="fa-li"><i class="fas fa-circle"></i></span>
                 <a href="guia.pdf">Guia Rápido de Inicialização</a>
             </li>
-        </ul>
+        </ul>-->
 
         <hr>
 
@@ -111,24 +116,30 @@
             </li>
             <li data-marker="*">
                 <span class="fa-li"><i class="fas fa-circle"></i></span>
-                <a href="https://sqlitebrowser.org/">Navegador de Banco de Dados para o SQLite</a>
+                <a href="https://sqlitebrowser.org/">Navegador para SQLite</a>
             </li>
+            <li data-marker="*">
+                <span class="fa-li"><i class="fas fa-circle"></i></span>
+                <a href="https://adminer.cs50.net/">Navegador para PostgreSQL</a>
+            </li>
+            <!--
             <li data-marker="*">
                 <span class="fa-li"><i class="fas fa-circle"></i></span>
                 <a href="https://man.cs50.io/">Manual CS50</a>
-            </li>
+            </li>-->
             <li data-marker="*">
                 <span class="fa-li"><i class="fas fa-circle"></i></span>
-                <a href="https://docs.python.org/3.7/search.html">Documentação Python</a>
+                <a href="https://docs.python.org/pt-br/3/search.html">Documentação Python</a>
             </li>
             <li data-marker="*">
                 <span class="fa-li"><i class="fas fa-circle"></i></span>
                 <a href="https://stackoverflow.com/search">Stack Overflow</a>
             </li>
+            <!--
             <li data-marker="*">
                 <span class="fa-li"><i class="fas fa-circle"></i></span>
-                <a href="guiadeestilo">Guia de Estilo</a>
-            </li>
+                <a href="{{ url_for('cs50x.guia_de_estilo') }}">Guia de Estilo</a>
+            </li>-->
         </ul>
 
         <hr>

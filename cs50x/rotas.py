@@ -63,3 +63,7 @@ def especializacoes():
     return render_template('especializacoes.html')
 
 
+@bp.route('/guiadeestilo')
+@bp.route('/guiadeestilo.html')
+def guia_de_estilo():
+    return render_template('guiadeestilo.html')

@@ -2,18 +2,19 @@
 
 {% block conteudo %}
 
-<h1 id="weeks"><a data-id="" href="https://cs50.harvard.edu/summer/2020/weeks/#weeks">Weeks</a></h1>
+<h1 id="semanas">Semanas</h1>
 
 <ol start="0">
-    <li><a href="https://cs50.harvard.edu/summer/2020/weeks/0">Scratch</a></li>
-    <li><a href="https://cs50.harvard.edu/summer/2020/weeks/1">C</a></li>
-    <li><a href="https://cs50.harvard.edu/summer/2020/weeks/2">Arrays</a></li>
-    <li>Algorithms</li>
-    <li>Memory</li>
-    <li>Data Structures</li>
-    <li>Python</li>
-    <li>SQL</li>
-    <li>Privacy</li>
+    <li><a href="{{ url_for('cs50x.semanas.semana0') }}">Scratch</a></li>
+    <li><a href="{{ url_for('cs50x.semanas.semana1') }}">Linguagem C</a></li>
+    <li><a href="{{ url_for('cs50x.semanas.semana2') }}">Vetores</a></li>
+    <li><a href="{{ url_for('cs50x.semanas.semana3') }}">Algoritmos</a></li>
+    <li><a href="{{ url_for('cs50x.semanas.semana4') }}">Memória</a></li>
+    <li><a href="{{ url_for('cs50x.semanas.semana5') }}">Estruturas de Dados</a></li>
+    <li><a href="{{ url_for('cs50x.semanas.semana6') }}">Python</a></li>
+    <li><a href="{{ url_for('cs50x.semanas.semana7') }}">SQL</a></li>
+    <li><a href="{{ url_for('cs50x.semanas.semana8') }}">HTML, CSS, JavaScript</a></li>
+    <li><a href="{{ url_for('cs50x.semanas.semana9') }}">Flask</a></li>
 </ol>
 
 {% endblock %}

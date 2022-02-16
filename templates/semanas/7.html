@@ -2,41 +2,73 @@
 
 {% block conteudo %}
 
-<h1 id="week-1">Semana 7</h1>
+<h1 id="week-7">Semana 7 <small class="text-muted">SQL</small></h1>
 
-<div class="border embed-responsive embed-responsive-16by9" data-video="">
-    <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="embed-responsive-item" src="https://video.cs50.io/e9Eds2Rc_x8?screen=ClQXfUurzgU"></iframe>
-</div>
+
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="border" data-video="" src="https://video.cs50.io/1YVIBFODn58?screen=z1mtkFY6ZJY"></iframe>
 
 <ul>
-  <li data-marker="-">Aula
+  <li data-marker="-">Lecture
     <ul>
-      <li data-marker="*"><a href="">Vídeo</a></li>
-      <li data-marker="*"><a href="">Áudio</a></li>
-      <li data-marker="*"><a href="../anotacoes/7">Anotações</a></li>
+      <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/7/lecture7.mp3">Audio</a></li>
+      <li data-marker="*"><a href="../../notes/7/">Notes</a></li>
       <li data-marker="+">Slides
         <ul>
-          <li data-marker="*"><a href="">Google Slides</a></li>
-          <li data-marker="*"><a href="">PDF</a></li>
+          <li data-marker="*"><a href="https://docs.google.com/presentation/d/1SJJguLmU4KNA_gqmC19uu9DW9eiOXuTdVyyma0xK50k/edit?usp=sharing">Google Slides</a></li>
+          <li data-marker="*"><a href="https://cdn.cs50.net/2021/fall/lectures/7/lecture7.pdf">PDF</a></li>
         </ul>
       </li>
-      <li data-marker="+">Código Fonte
+      <li data-marker="+">Source Code
         <ul>
-          <li data-marker="*"><a href="">PDF</a></li>
-          <li data-marker="*"><a href="">Zip</a></li>
+          <li data-marker="*"><a href="https://cdn.cs50.net/2021/fall/lectures/7/src7/">Index</a></li>
+          <li data-marker="*"><a href="https://cdn.cs50.net/2021/fall/lectures/7/src7.pdf">PDF</a></li>
+          <li data-marker="*"><a href="https://cdn.cs50.net/2021/fall/lectures/7/src7.zip">Zip</a></li>
         </ul>
       </li>
-      
+      <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/7/lang/en/lecture7.srt">Subtitles</a></li>
+      <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/7/lang/en/lecture7.txt">Transcript</a></li>
+      <li data-marker="+">Video
+        <ul>
+          <li data-marker="+">CS50 Video Player
+            <ul>
+              <li data-marker="*"><a href="https://video.cs50.io/D-1kNFO568c?screen=YR-XuGdWvR8">HDR</a></li>
+              <li data-marker="*"><a href="https://video.cs50.io/1YVIBFODn58?screen=z1mtkFY6ZJY">SDR</a></li>
+            </ul>
+          </li>
+          <li data-marker="+">MP4
+            <ul>
+              <li data-marker="+">HDR
+                <ul>
+                  <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/7/lecture7-4k-hdr.mp4">4K</a></li>
+                </ul>
+              </li>
+              <li data-marker="+">SDR
+                <ul>
+                  <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/7/lecture7-360p.mp4">360p</a></li>
+                  <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/7/lecture7-720p.mp4">720p</a></li>
+                  <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/7/lecture7-1080p.mp4">1080p</a></li>
+                  <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/7/lecture7-4k.mp4">4K</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li data-marker="+">YouTube
+            <ul>
+              <li data-marker="*"><a href="https://youtu.be/D-1kNFO568c">HDR</a></li>
+              <li data-marker="*"><a href="https://youtu.be/1YVIBFODn58">SDR</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
     </ul>
   </li>
-  <li data-marker="-">Tópicos Importantes
+  <li data-marker="-">Shorts
     <ol>
-      <li><a href="">SQL</a></li>
-      
+      <li><a href="../../shorts/sql/">SQL</a></li>
     </ol>
   </li>
-  <li data-marker="*"><a href="../problemas/7">Lista de Problemas 7</a></li>
+  <li data-marker="*"><a href="../../labs/7/">Lab 7</a></li>
+  <li data-marker="*"><a href="{{ url_for('cs50x.problemas.problemas7') }}">Problem Set 7</a></li>
 </ul>
-
 
 {% endblock %}

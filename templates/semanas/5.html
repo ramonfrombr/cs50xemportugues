@@ -3,47 +3,77 @@
 {% block conteudo %}
 
 
-<h1 id="week-1">Semana 5</h1>
+<h1 id="week-5">Semana 5 <small class="text-muted">Estruturas de Dados</small></h1>
 
-<div class="border embed-responsive embed-responsive-16by9" data-video="">
-    <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="embed-responsive-item" src="https://video.cs50.io/e9Eds2Rc_x8?screen=ClQXfUurzgU"></iframe>
-</div>
+
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="border" data-video="" src="https://video.cs50.io/urRlbmW5Txw?screen=zGTegMBU4d8"></iframe>
 
 <ul>
-  <li data-marker="-">Aula
+  <li data-marker="-">Lecture
     <ul>
-      <li data-marker="*"><a href="">Vídeo</a></li>
-      <li data-marker="*"><a href="">Áudio</a></li>
-      <li data-marker="*"><a href="../anotacoes/5">Anotações</a></li>
+      <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/5/lecture5.mp3">Audio</a></li>
+      <li data-marker="*"><a href="../../notes/5/">Notes</a></li>
       <li data-marker="+">Slides
         <ul>
-          <li data-marker="*"><a href="">Google Slides</a></li>
-          <li data-marker="*"><a href="">PDF</a></li>
+          <li data-marker="*"><a href="https://docs.google.com/presentation/d/1EhjKyGdZTh0BFokxcvi8KPoHwfNPXZSKN_R0ZjMcz6U/edit?usp=sharing">Google Slides</a></li>
+          <li data-marker="*"><a href="https://cdn.cs50.net/2021/fall/lectures/5/lecture5.pdf">PDF</a></li>
         </ul>
       </li>
-      <li data-marker="+">Código Fonte
+      <li data-marker="+">Source Code
         <ul>
-          <li data-marker="*"><a href="">PDF</a></li>
-          <li data-marker="*"><a href="">Zip</a></li>
+          <li data-marker="*"><a href="https://cdn.cs50.net/2021/fall/lectures/5/src5/">Index</a></li>
+          <li data-marker="*"><a href="https://cdn.cs50.net/2021/fall/lectures/5/src5.pdf">PDF</a></li>
+          <li data-marker="*"><a href="https://cdn.cs50.net/2021/fall/lectures/5/src5.zip">Zip</a></li>
         </ul>
       </li>
-      
+      <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/5/lang/en/lecture5.srt">Subtitles</a></li>
+      <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/5/lang/en/lecture5.txt">Transcript</a></li>
+      <li data-marker="+">Video
+        <ul>
+          <li data-marker="+">CS50 Video Player
+            <ul>
+              <li data-marker="*"><a href="https://video.cs50.io/-gpsiMiEOHU?screen=3aDF559uVkE">HDR</a></li>
+              <li data-marker="*"><a href="https://video.cs50.io/urRlbmW5Txw?screen=zGTegMBU4d8">SDR</a></li>
+            </ul>
+          </li>
+          <li data-marker="+">MP4
+            <ul>
+              <li data-marker="+">HDR
+                <ul>
+                  <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/5/lecture5-4k-hdr.mp4">4K</a></li>
+                </ul>
+              </li>
+              <li data-marker="+">SDR
+                <ul>
+                  <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/5/lecture5-360p.mp4">360p</a></li>
+                  <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/5/lecture5-720p.mp4">720p</a></li>
+                  <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/5/lecture5-1080p.mp4">1080p</a></li>
+                  <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/5/lecture5-4k.mp4">4K</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li data-marker="+">YouTube
+            <ul>
+              <li data-marker="*"><a href="https://youtu.be/-gpsiMiEOHU">HDR</a></li>
+              <li data-marker="*"><a href="https://youtu.be/urRlbmW5Txw">SDR</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
     </ul>
   </li>
-  <li data-marker="-">Tópicos Importantes
+  <li data-marker="-">Shorts
     <ol>
-      <li><a href="">Estruturas (comando struct)</a></li>
-      <li><a href="">Tipos de Dados Personalizados</a></li>
-      <li><a href="">Listas Encadeadas</a></li>
-      <li><a href="">Listas Duplamente Encadeadas</a></li>
-      <li><a href="">Tabelas de Dispersão</a></li>
-      <li><a href="">Árvores de Prefixos</a></li>
-      <li><a href="">Estruturas de Dados</a></li>
-      <li><a href="">Pilhas</a></li>
-      <li><a href="">Filas</a></li>
+      <li><a href="../../shorts/data_structures/">Data Structures</a></li>
+      <li><a href="../../shorts/singly_linked_lists/">Singly-Linked Lists</a></li>
+      <li><a href="../../shorts/hash_tables/">Hash Tables</a></li>
+      <li><a href="../../shorts/tries/">Tries</a></li>
     </ol>
   </li>
-  <li data-marker="*"><a href="../problemas/5">Lista de Problemas 5</a></li>
+  <li data-marker="*"><a href="../../labs/5/">Lab 5</a></li>
+  <li data-marker="*"><a href="{{ url_for('cs50x.problemas.problemas5') }}">Problem Set 5</a></li>
 </ul>
+
 
 {% endblock %}

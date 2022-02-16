@@ -2,33 +2,81 @@
 
 {% block conteudo %}
 
-<h1 id="week-1">Semana 8</h1>
+<h1 id="week-8">Semana 8 <small class="text-muted">HTML, CSS, JavaScript</small></h1>
 
-<div class="border embed-responsive embed-responsive-16by9" data-video="">
-    <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="embed-responsive-item" src="https://video.cs50.io/e9Eds2Rc_x8?screen=ClQXfUurzgU"></iframe>
-</div>
+
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="border" data-video="" src="https://video.cs50.io/lp-FwJwCqpE?screen=uSHJShK0aJ0"></iframe>
 
 <ul>
-    <li data-marker="-">Aula
+  <li data-marker="-">Lecture
+    <ul>
+      <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/8/lecture8.mp3">Audio</a></li>
+      <li data-marker="*"><a href="../../notes/8/">Notes</a></li>
+      <li data-marker="+">Slides
         <ul>
-            <li data-marker="*"><a href="">Vídeo</a></li>
-            <li data-marker="*"><a href="">Áudio</a></li>
-            <li data-marker="*"><a href="../anotacoes/7">Anotações</a></li>
-            <li data-marker="+">Slides
-                <ul>
-                    <li data-marker="*"><a href="">Google Slides</a></li>
-                    <li data-marker="*"><a href="">PDF</a></li>
-                </ul>
-            </li>
-            <li data-marker="+">Código Fonte
-                <ul>
-                    <li data-marker="*"><a href="">PDF</a></li>
-                    <li data-marker="*"><a href="">Zip</a></li>
-                </ul>
-            </li>   
+          <li data-marker="*"><a href="https://docs.google.com/presentation/d/1rcY0Qah4yRwChpUGkD0hs159pUjlddKwiEW-88RBDLo/edit?usp=sharing">Google Slides</a></li>
+          <li data-marker="*"><a href="https://cdn.cs50.net/2021/fall/lectures/8/lecture8.pdf">PDF</a></li>
         </ul>
-    </li>
-    <li data-marker="*"><a href="../especializacoes">Lista de Problemas 8 - (escolha uma especialização)</a></li>
+      </li>
+      <li data-marker="+">Source Code
+        <ul>
+          <li data-marker="*"><a href="https://cdn.cs50.net/2021/fall/lectures/8/src8/">Index</a></li>
+          <li data-marker="*"><a href="https://cdn.cs50.net/2021/fall/lectures/8/src8.pdf">PDF</a></li>
+          <li data-marker="*"><a href="https://cdn.cs50.net/2021/fall/lectures/8/src8.zip">Zip</a></li>
+        </ul>
+      </li>
+      <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/8/lang/en/lecture8.srt">Subtitles</a></li>
+      <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/8/lang/en/lecture8.txt">Transcript</a></li>
+      <li data-marker="+">Video
+        <ul>
+          <li data-marker="+">CS50 Video Player
+            <ul>
+              <li data-marker="*"><a href="https://video.cs50.io/2VauFS071pg?screen=97z0JU1oVxM">HDR</a></li>
+              <li data-marker="*"><a href="https://video.cs50.io/lp-FwJwCqpE?screen=uSHJShK0aJ0">SDR</a></li>
+            </ul>
+          </li>
+          <li data-marker="+">MP4
+            <ul>
+              <li data-marker="+">HDR
+                <ul>
+                  <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/8/lecture8-4k-hdr.mp4">4K</a></li>
+                </ul>
+              </li>
+              <li data-marker="+">SDR
+                <ul>
+                  <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/8/lecture8-360p.mp4">360p</a></li>
+                  <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/8/lecture8-720p.mp4">720p</a></li>
+                  <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/8/lecture8-1080p.mp4">1080p</a></li>
+                  <li data-marker="*"><a href="http://cdn.cs50.net/2021/fall/lectures/8/lecture8-4k.mp4">4K</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li data-marker="+">YouTube
+            <ul>
+              <li data-marker="*"><a href="https://youtu.be/2VauFS071pg">HDR</a></li>
+              <li data-marker="*"><a href="https://youtu.be/lp-FwJwCqpE">SDR</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li data-marker="-">Shorts
+    <ol>
+      <li><a href="../../shorts/internet_primer/">Internet Primer</a></li>
+      <li><a href="../../shorts/ip/">IP</a></li>
+      <li><a href="../../shorts/tcp/">TCP</a></li>
+      <li><a href="../../shorts/http/">HTTP</a></li>
+      <li><a href="../../shorts/html/">HTML</a></li>
+      <li><a href="../../shorts/css/">CSS</a></li>
+      <li><a href="../../shorts/javascript/">JavaScript</a></li>
+      <li><a href="../../shorts/dom/">DOM</a></li>
+    </ol>
+  </li>
+  <li data-marker="*"><a href="../../labs/8/">Lab 8</a></li>
+  <li data-marker="*"><a href="{{ url_for('cs50x.problemas.problemas8') }}">Problem Set 8</a></li>
 </ul>
+
 
 {% endblock %}

@@ -11,11 +11,11 @@
 
 <ol>
   <li>Vá para <a href="https://ide.cs50.io">ide.cs50.io</a> e clique em "Sign in with GitHub" (entrar com GitHub) para acessar o seu CS50 IDE.</li>
-  <li>Envie <a href="legibilidade">Legibilidade</a></li>
+  <li>Envie <a href="{{ url_for('cs50x.problemas.legibilidade') }}">Legibilidade</a></li>
   <li>Envie um dos dois:
     <ul>
-      <li data-marker="*"><a href="cesar">César</a>, caso você esteja menos confortável</li>
-      <li data-marker="*"><a href="substituicao">Substituição</a>, caso você esteja mais confortável</li>
+      <li data-marker="*"><a href="{{ url_for('cs50x.problemas.cesar') }}">César</a>, caso você esteja menos confortável</li>
+      <li data-marker="*"><a href="{{ url_for('cs50x.problemas.substituicao') }}">Substituição</a>, caso você esteja mais confortável</li>
     </ul>
   </li>
 </ol>
@@ -25,12 +25,12 @@
 
 <h2 id="when-to-do-it">Quando fazer</h2>
 
-<p>Até 23:59 horas de 31 de Dezembro de 2021</p>
+<p>Até 23:59 horas de 31 de Dezembro de 2022</p>
 
 <h2 id="advice">Dica</h2>
 
 <ul>
-  <li data-marker="*">Teste alguns dos programas que Ramon mostrou na aula, usando o código fonte da <a href="../../semanas/2">Semana 2</a>.</li>
+  <li data-marker="*">Teste alguns dos programas que Ramon mostrou na aula, usando o código fonte da <a href="{{ url_for('cs50x.semanas.semana2') }}">Semana 2</a>.</li>
 
   <li data-marker="*">Caso você encontre algum erro ao compilar seu código usando o comando <code class="highlighter-rouge">make</code>, foque em resolver o primeiro erro da lista de erros que o compilador mostrar. Se você não tiver certeza do que a mensagem de erro significa, use a ferramenta <code class="highlighter-rouge">help50</code> para buscar ajuda. Por exemplo, se você tentar compilar <code class="highlighter-rouge">legibilidade</code>, e
     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make legibilidade </code></pre></div>    </div>
