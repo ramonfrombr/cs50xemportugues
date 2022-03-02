@@ -139,94 +139,107 @@ Texto: Era um dia frio e ensolarado de abril, e os relógios batiam treze horas.
 53 palavra(s)
 </code></pre></div></div>
 
-<h3 id="sentences">Sentences</h3>
+<h3 id="sentences">Sentenças</h3>
 
-<p>The last piece of information that the Coleman-Liau formula cares about, in addition to the number of letters and words, is the number of sentences. Determining the number of sentences can be surprisingly trickly. You might first imagine that a sentence is just any sequence of characters that ends with a period, but of course sentences could end with an exclamation point or a question mark as well. But of course, not all periods necessarily mean the sentence is over. For instance, consider the sentence below.</p>
+<p>A última coisa que compõe a fórmula Coleman-Liau, além do número de letras e palavras, é o número de sentenças. Determinar o número de frases é complicado. Você pode primeiro imaginar que uma sentença é simplesmente uma sequência de caracteres que terminam em um ponto, mas uma sentença, é claro, pode terminar com um ponto de exclamação ou ponto de interrogação. Mas nem todos os pontos significam necessariamente que uma sentença terminou. Considere, por exemplo, a sentença abaixo.</p>
+
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mr. and Mrs. Dursley, of number four Privet Drive, were proud to say that they were perfectly normal, thank you very much.
 </code></pre></div></div>
 
-<p>This is just a single sentence, but there are three periods! For this problem, we’ll ask you to ignore that subtlety: you should consider any sequence of characters that ends with a <code class="highlighter-rouge">.</code> or a <code class="highlighter-rouge">!</code> or a <code class="highlighter-rouge">?</code> to be a sentence (so for the above “sentence”, you may count that as three sentences). In practice, sentence boundary detection needs to be a little more intelligent to handle these cases, but we’ll not worry about that for now.</p>
 
-<p>Modify <code class="highlighter-rouge">readability.c</code> so that it also now prints out the number of sentences in the text.</p>
 
-<p>The behavior of the resulting program should be like the below.</p>
+<p>Isto é uma única sentença, mas existem três pontos! Para este problema, nós vamos pedir que você ignore essa sutileza: você deve considerar qualquer sequência de caracteres que terminam em um <code class="highlighter-rouge">.</code> ou um <code class="highlighter-rouge">!</code> ou um <code class="highlighter-rouge">?</code> como sendo uma sentença (portanto, para a "sentença" acima, você pode considerar como sendo três sentenças). Na prática, detectar os limites de sentenças precisa ser feito de forma mais inteligente, mas nós não vamos nos preocupar com isso agora.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./readability
+<p>Modifique <code class="highlighter-rouge">legibilidade.c</code> de forma que o programa agora também imprima o número de sentenças no texto.</p>
+
+<p>O comportamento do programa deve ser como abaixo.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./legibilidade
 Text: When he was nearly thirteen, my brother Jem got his arm badly broken at the elbow. When it healed, and Jem's fears of never being able to play football were assuaged, he was seldom self-conscious about his injury. His left arm was somewhat shorter than his right; when he stood or walked, the back of his hand was at right angles to his body, his thumb parallel to his thigh.
-295 letter(s)
-70 word(s)
-3 sentence(s)
+295 letra(s)
+70 palavra(s)
+3 sentença(s)
 </code></pre></div></div>
 
-<h3 id="putting-it-all-together">Putting it All Together</h3>
 
-<p>Now it’s time to put all the pieces together! Recall that the Coleman-Liau index is computed using the formula:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>index = 0.0588 * L - 0.296 * S - 15.8
+<h3 id="putting-it-all-together">Finalizando</h3>
+
+<p>Agora é hora de juntar todas as peças e finalizar a resolução do problema! Lembre-se que o índice Coleman-Liau é calculado usando a fórmula:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>indice = 0.0588 * L - 0.296 * S - 15.8
 </code></pre></div></div>
 
-<p>where <code class="highlighter-rouge">L</code> is the average number of letters per 100 words in the text, and <code class="highlighter-rouge">S</code> is the average number of sentences per 100 words in the text.</p>
+<p>onde <code class="highlighter-rouge">L</code> é a média de letras a cada 100 palavras no texto, e <code class="highlighter-rouge">S</code> é a média de sentenças a cada 100 palavras no texto.</p>
 
-<p>Modify <code class="highlighter-rouge">readability.c</code> so that instead of outputting the number of letters, words, and sentences, it instead outputs the grade level as given by the Coleman-Liau index (e.g. <code class="highlighter-rouge">"Grade 2"</code> or <code class="highlighter-rouge">"Grade 8"</code>). Be sure to round the resulting index number to the nearest whole number!</p>
+<p>Modifique o programa <code class="highlighter-rouge">legibilidade.c</code> de maneira que ao invés de imprimir o número de letras, palavras, e sentenças, o programa imprime o nível escolar indicado pelo índice Coleman-Liau (por exemplo, <code class="highlighter-rouge">"Nível 2"</code> ou <code class="highlighter-rouge">"Nível 8"</code>). Não se esqueça de arredondar o resultado para o número inteiro mais próximo!</p>
 
-<p>If the resulting index number is 16 or higher (equivalent to or greater than a senior undergraduate reading level), your program should output <code class="highlighter-rouge">"Grade 16+"</code> instead of giving the exact index number. If the index number is less than 1, your program should output <code class="highlighter-rouge">"Before Grade 1"</code>.</p>
+<p>Se o índice resultante for 16 ou maior (equivalente ou maior que um nível de leitura de estudante de ensino superior), seu programa deve imprimir <code class="highlighter-rouge">"Nível 16+"</code> ao invés do número do índice exato. Se o número do índice for menor do que 1, se programa deve imprimir <code class="highlighter-rouge">"Antes do Nível 1"</code>.</p>
+
+
 
 <details>
-    <summary>Hints</summary>
+    <summary>Dicas/summary>
     <ul>
   <li data-marker="*">
-    <p>Recall that <code class="highlighter-rouge">math.h</code> declares a function called <code class="highlighter-rouge">round</code> that might be useful here.</p>
+    <p>Lembre-se que a biblioteca <code class="highlighter-rouge">math.h</code> declara uma função chamada <code class="highlighter-rouge">round</code> que pode ser útil neste problema.</p>
   </li>
   <li data-marker="*">
-    <p>Recall that, when dividing values of type <code class="highlighter-rouge">int</code> in C, the result will also be an <code class="highlighter-rouge">int</code>, with any remainder (i.e., digits after the decimal point) discarded. Put another way, the result will be “truncated.” You might want to cast your one or more values to <code class="highlighter-rouge">float</code> before performing division when calculating <code class="highlighter-rouge">L</code> and <code class="highlighter-rouge">S</code>!</p>
+    <p>Lembre-se que quando estiver dividindo valores do tipo <code class="highlighter-rouge">int</code> na linguagem C, o resultado também será um <code class="highlighter-rouge">int</code>, e que qualquer resto de divisão (ou seja, os dígitos depois do ponto decimal) é descartado. Em outras palavras, o resultado será "truncado". Você deve converter um ou mais valores para o tipo de dado <code class="highlighter-rouge">float</code> antes de fazer divisão quando estiver calculando <code class="highlighter-rouge">L</code> e <code class="highlighter-rouge">S</code>!</p>
   </li>
 </ul>
 </details>
 
-<h2 id="walkthrough">Walkthrough</h2>
+<h2 id="walkthrough">Passo a passo</h2>
 
 <div class="border embed-responsive embed-responsive-16by9" data-video="">
     <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="embed-responsive-item" src="https://www.youtube.com/embed/nif3h2ggrOU?modestbranding=1&amp;rel=0&amp;showinfo=0"></iframe>
 </div>
 
 <div class="alert" data-alert="warning" role="alert">
-  <p>Note that while the walkthrough illustrates that words may be separated by more than one space, you may assume, per the specifications above, that no sentences will contain more than one space in a row.</p>
+  <p>Perceba que ainda que o passo a passo ilustre que as palavras possam ser separadas por mais de um espaço, você pode considerar, seguindo as especificações acima, que nenhuma sentença terá mais do que um espaço em sequência.</p>
 </div>
 
-<h2 id="how-to-test-your-code">How to Test Your Code</h2>
+<h2 id="how-to-test-your-code">Como Testar Seu Código</h2>
 
-<p>Try running your program on the following texts.</p>
+<p>Tente executar seu programa com os seguintes textos.</p>
 
 <ul>
-  <li data-marker="*"><code class="highlighter-rouge">One fish. Two fish. Red fish. Blue fish.</code> (Before Grade 1)</li>
-  <li data-marker="*"><code class="highlighter-rouge">Would you like them here or there? I would not like them here or there. I would not like them anywhere.</code> (Grade 2)</li>
-  <li data-marker="*"><code class="highlighter-rouge">Congratulations! Today is your day. You're off to Great Places! You're off and away!</code> (Grade 3)</li>
-  <li data-marker="*"><code class="highlighter-rouge">Harry Potter was a highly unusual boy in many ways. For one thing, he hated the summer holidays more than any other time of year. For another, he really wanted to do his homework, but was forced to do it in secret, in the dead of the night. And he also happened to be a wizard.</code> (Grade 5)</li>
-  <li data-marker="*"><code class="highlighter-rouge">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</code> (Grade 7)</li>
-  <li data-marker="*"><code class="highlighter-rouge">Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, "and what is the use of a book," thought Alice "without pictures or conversation?"</code> (Grade 8)</li>
-  <li data-marker="*"><code class="highlighter-rouge">When he was nearly thirteen, my brother Jem got his arm badly broken at the elbow. When it healed, and Jem's fears of never being able to play football were assuaged, he was seldom self-conscious about his injury. His left arm was somewhat shorter than his right; when he stood or walked, the back of his hand was at right angles to his body, his thumb parallel to his thigh.</code> (Grade 8)</li>
-  <li data-marker="*"><code class="highlighter-rouge">There are more things in Heaven and Earth, Horatio, than are dreamt of in your philosophy.</code> (Grade 9)</li>
-  <li data-marker="*"><code class="highlighter-rouge">It was a bright cold day in April, and the clocks were striking thirteen. Winston Smith, his chin nuzzled into his breast in an effort to escape the vile wind, slipped quickly through the glass doors of Victory Mansions, though not quickly enough to prevent a swirl of gritty dust from entering along with him.</code> (Grade 10)</li>
-  <li data-marker="*"><code class="highlighter-rouge">A large class of computational problems involve the determination of properties of graphs, digraphs, integers, arrays of integers, finite families of finite sets, boolean formulas and elements of other countable domains.</code> (Grade 16+)</li>
+  <li data-marker="*"><code class="highlighter-rouge">One fish. Two fish. Red fish. Blue fish.</code> (Antes do Nível 1)</li>
+  <li data-marker="*"><code class="highlighter-rouge">Would you like them here or there? I would not like them here or there. I would not like them anywhere.</code> (Nível 2)</li>
+  <li data-marker="*"><code class="highlighter-rouge">Congratulations! Today is your day. You're off to Great Places! You're off and away!</code> (Nível 3)</li>
+  <li data-marker="*"><code class="highlighter-rouge">Harry Potter was a highly unusual boy in many ways. For one thing, he hated the summer holidays more than any other time of year. For another, he really wanted to do his homework, but was forced to do it in secret, in the dead of the night. And he also happened to be a wizard.</code> (Nível 5)</li>
+  <li data-marker="*"><code class="highlighter-rouge">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</code> (Nível 7)</li>
+  <li data-marker="*"><code class="highlighter-rouge">Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, "and what is the use of a book," thought Alice "without pictures or conversation?"</code> (Nível 8)</li>
+  <li data-marker="*"><code class="highlighter-rouge">When he was nearly thirteen, my brother Jem got his arm badly broken at the elbow. When it healed, and Jem's fears of never being able to play football were assuaged, he was seldom self-conscious about his injury. His left arm was somewhat shorter than his right; when he stood or walked, the back of his hand was at right angles to his body, his thumb parallel to his thigh.</code> (Nível 8)</li>
+  <li data-marker="*"><code class="highlighter-rouge">There are more things in Heaven and Earth, Horatio, than are dreamt of in your philosophy.</code> (Nível 9)</li>
+  <li data-marker="*"><code class="highlighter-rouge">It was a bright cold day in April, and the clocks were striking thirteen. Winston Smith, his chin nuzzled into his breast in an effort to escape the vile wind, slipped quickly through the glass doors of Victory Mansions, though not quickly enough to prevent a swirl of gritty dust from entering along with him.</code> (Nível 10)</li>
+  <li data-marker="*"><code class="highlighter-rouge">A large class of computational problems involve the determination of properties of graphs, digraphs, integers, arrays of integers, finite families of finite sets, boolean formulas and elements of other countable domains.</code> (Nível 16+)</li>
 </ul>
 
-<p>Execute the below to evaluate the correctness of your code using <code class="highlighter-rouge">check50</code>. But be sure to compile and test it yourself as well!</p>
+<p>Execute a linha abaixo para avaliar a correção do seu código usando a ferramenta <code class="highlighter-rouge">check50</code>. Não se esqueça de compilar e testar o código você também!</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>check50 cs50/problems/2020/x/readability
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>check50 cs50xemportugues/problemas/2022/legibilidade
 </code></pre></div></div>
 
-<p>Execute the below to evaluate the style of your code using <code class="highlighter-rouge">style50</code>.</p>
+<p>Execute a linha abaixo para avaliar o estilo do seu código usando a ferramenta <code class="highlighter-rouge">style50</code>.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>style50 readability.c
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>style50 legibilidade.c
 </code></pre></div></div>
 
-<h2 id="how-to-submit">How to Submit</h2>
+<h2>Como Adaptar Seu Código Antes de Enviar</h2>
 
-<p>Execute the below, logging in with your GitHub username and password when prompted. For security, you’ll see asterisks (<code class="highlighter-rouge">*</code>) instead of the actual characters in your password.</p>
+<p>TODO</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>submit50 cs50/problems/2020/x/readability
-</code></pre></div></div>    	
+<h2 id="how-to-submit">Como Enviar</h2>
+
+<p>Execute a linha abaixo, e em seguida informe sua conta GitHub e sua senha quando o terminal pedir. Por medidas de segurança, você verá asteriscos (<code class="highlighter-rouge">*</code>) ao invés dos caracteres reais na sua senha.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>submit50 cs50/problems/2022/x/plurality
+</code></pre></div></div>   	
                
 
 {% endblock %}
